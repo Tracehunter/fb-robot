@@ -241,8 +241,10 @@ function handleReceivedMessage(event) {
   console.log("Received message for user %d and page %d at %d with message: %s", 
     senderID, recipientID, timeOfMessage,messageText);
 
+	  // Get current time to choose between "Bonjour" or "Bonsoir"
 var d = new Date();
-var n = d.getHours();	  
+var n = d.getHours();
+var n = n+2;
 	  
     // If we receive a text message, check to see if it matches any special
     // keywords and send back the corresponding example. Otherwise, just echo
