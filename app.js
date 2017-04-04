@@ -296,8 +296,12 @@ function handleReceivedMessage(event) {
       case 'user info':
         if(firstName)
             sendTextMessage(senderID,firstName);
-        break        
-
+        break      
+	
+      case 'user id':
+            sendTextMessage(senderID,senderID);
+        break
+	
       case 'add menu':
         addPersistentMenu();
         break        
