@@ -568,8 +568,8 @@ function sendEnteredMessage(recipientId,messageText) {
 console.log("sendEnteredMessage "+ messageText);
 
     if( previousMessageHash[recipientId] === 'send a message') {
-         //sendTextMessage(100000677143634,fistName + " " + lastName + " " + messageText); // send a message to Matthew directly
-         sendTextMessage(100000677143634, messageText); // send a message to Matthew directly
+         //sendTextMessage(1484991008185950,fistName + " " + lastName + " " + messageText); // send a message to Matthew directly
+         sendTextMessage(1484991008185950, messageText); // send a message to Matthew directly
     }
     else if( senderContext[recipientId].state === 'addKeywordStep1') {
          addKeywordStep2(recipientId,messageText);
