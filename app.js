@@ -241,6 +241,9 @@ function handleReceivedMessage(event) {
   console.log("Received message for user %d and page %d at %d with message: %s", 
     senderID, recipientID, timeOfMessage,messageText);
 
+var d = new Date();
+var n = d.getHours();	  
+	  
     // If we receive a text message, check to see if it matches any special
     // keywords and send back the corresponding example. Otherwise, just echo
     // the text we received.
@@ -301,6 +304,10 @@ function handleReceivedMessage(event) {
       case 'user id':
             sendTextMessage(senderID,senderID);
         break
+      
+      case 'what time is it ?':
+      	    sendTextMessage(senderID,n);
+	break
 	
       case 'add menu':
         addPersistentMenu();
