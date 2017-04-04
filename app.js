@@ -1190,8 +1190,8 @@ function addPersistentMenu(){
             },
             {
               type:"web_url",
-              title:"DMS Software Website",
-              url:"http://www.dynamic-memory.com/"
+              title:"Visiter cbminformatique.biz",
+              url:"https://cbminformatique.biz/"
             }
           ]
     }
