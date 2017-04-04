@@ -311,16 +311,19 @@ function handleReceivedMessage(event) {
         break        
 
       case 'stop':  // Stop the Bot from responding if the admin sends this messages
-         if(senderID ==  100000677143634) {
+         if(senderID ==  1484991008185950) {
             console.log("Stoppping bot");
+	    sendTextMessage(senderID, "Bot is offline");
+
             isStopped = true;
          }
          break
 
       case 'start': // start up again
-         if(senderID ==  100000677143634)  {
+         if(senderID ==  1484991008185950)  {
             console.log("Starting bot");
             isStopped = false;
+	    sendTextMessage(senderID, "Bot is online");
          }
          break
 
