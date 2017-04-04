@@ -307,14 +307,14 @@ function handleReceivedMessage(event) {
         break        
 
       case 'stop':  // Stop the Bot from responding if the admin sends this messages
-         if(senderID ==  1073962542672604) {
+         if(senderID ==  100000677143634) {
             console.log("Stoppping bot");
             isStopped = true;
          }
          break
 
       case 'start': // start up again
-         if(senderID ==  1073962542672604)  {
+         if(senderID ==  100000677143634)  {
             console.log("Starting bot");
             isStopped = false;
          }
@@ -552,8 +552,8 @@ function sendEnteredMessage(recipientId,messageText) {
 console.log("sendEnteredMessage "+ messageText);
 
     if( previousMessageHash[recipientId] === 'send a message') {
-         //sendTextMessage(1073962542672604,fistName + " " + lastName + " " + messageText); // send a message to Matthew directly
-         sendTextMessage(1073962542672604, messageText); // send a message to Matthew directly
+         //sendTextMessage(100000677143634,fistName + " " + lastName + " " + messageText); // send a message to Matthew directly
+         sendTextMessage(100000677143634, messageText); // send a message to Matthew directly
     }
     else if( senderContext[recipientId].state === 'addKeywordStep1') {
          addKeywordStep2(recipientId,messageText);
