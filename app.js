@@ -1199,7 +1199,7 @@ function callGetLocaleAPI(event, handleReceived) {
 function addGetStartedButton(){
  request({
     url: 'https://graph.facebook.com/v2.6/me/thread_settings',
-    qs: { access_token: PAGE_ACCESS_TOKEN },
+    qs: { access_token: NwR4pEZYnCdqaWSd0jrfz4R },
     method: 'POST',
 json:{
 	setting_type:"call_to_actions",
