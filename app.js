@@ -318,10 +318,14 @@ var n = n+2;
       	    sendTextMessage(senderID,n);
 	break
 	
+	case 'add GetStarted':
+	addGetStartedButton();
+	break
+	
       case 'add menu':
         addPersistentMenu();
-        break        
-
+      break        
+	
       case 'remove menu':
         removePersistentMenu();
         break        
@@ -1191,6 +1195,31 @@ function callGetLocaleAPI(event, handleReceived) {
     });
 }
 
+
+function addGetStartedButton(){
+ request({
+    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
+    qs: { access_token: PAGE_ACCESS_TOKEN },
+    method: 'POST',
+json:{
+	setting_type:"call_to_actions",
+	thread_state:"new_thread",
+	call_to_actions":[
+    {
+      "payload":"getstarted"
+    }
+    ]
+}
+}, function(error, response, body) {
+    console.log(response)
+    if (error) {
+        console.log('Error sending messages: ', error)
+    } else if (response.body.error) {
+        console.log('Error: ', response.body.error)
+    }
+})
+
+}
 
 function addPersistentMenu(){
  request({
