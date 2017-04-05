@@ -245,11 +245,18 @@ function handleReceivedMessage(event) {
 var d = new Date();
 var n = d.getHours();
 var n = n+2;
+	  if ((n < 6)||(n>19)) var openingmessage = "Bonsoir";
+	  else var openingmessage = "Bonjour";
 	  
     // If we receive a text message, check to see if it matches any special
     // keywords and send back the corresponding example. Otherwise, just echo
     // the text we received.
     switch (messageText.toLowerCase()) {
+		    
+	case 'bonjoursoir':
+	sendTextMessage(senderID,openingmessage);
+	break;
+
       case 'image':
         sendImageMessage(senderID, "http://messengerdemo.parseapp.com/img/rift.png");
         break;
