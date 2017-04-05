@@ -1,0 +1,27 @@
+{
+      "attachment": {
+        "type": "template",
+        "payload": {
+          "template_type": "button",
+          "text": "Bienvenue chez CBM informatique ! Je suis Pixel, votre assistant virtuel. Que puis-je faire pour vous aider aujourd'hui ?",
+          "buttons":[
+          {
+            "type": "postback",
+            "title": "Afficher le menu complet",
+            "payload": "menu"
+          },
+          {
+            "type": "postback",
+            "title": "Voir les folders",
+            "payload": "folders"
+          },
+          {
+            "type": "postback",
+            "title": "Obtenir des infos sur un produit",
+            "payload": "infoproduit"
+          }          
+
+           ]
+        }
+      }
+}
