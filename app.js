@@ -252,7 +252,8 @@ var n = n+2;
     // keywords and send back the corresponding example. Otherwise, just echo
     // the text we received.
     switch (messageText.toLowerCase()) {
-	case 'getstartedd'
+		    
+	case 'bonjoursoir':
 	sendTextMessage(senderID,openingmessage+" "+firstName+", que puis-je faire pour vous aujourd'hui ?");
 	break;
 
@@ -1392,4 +1393,3 @@ app.listen(app.get('port'), function() {
 });
 
 module.exports = app;
-
