@@ -100,15 +100,14 @@ app.post('/webhook', function (req, res) {
         } else if (messagingEvent.delivery) {
           receivedDeliveryConfirmation(messagingEvent);
         } else if (messagingEvent.postback) {
+		if (messagingEvent.postback.payload === STARTED ) {
+			sendTextMessage(senderID,openingmessage+" "+firstName+", que puis-je faire pour vous aujourd'hui ?");
+		}
+		else {
           receivedPostback(messagingEvent);
         } else if (messagingEvent.read) {
           receivedMessageRead(messagingEvent);
         } else {
-		if(event.postback && event.postback.payload === USER_DEFINED_PAYLOAD )
-        {
-                //present user with some greeting or call to action
-sendTextMessage(senderID,openingmessage+" "+firstName+", que puis-je faire pour vous aujourd'hui ?");
-  }   else {
           console.log("Webhook received unknown messagingEvent: ", messagingEvent);
         }
       });
