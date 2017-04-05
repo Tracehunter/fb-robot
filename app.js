@@ -104,6 +104,11 @@ app.post('/webhook', function (req, res) {
         } else if (messagingEvent.read) {
           receivedMessageRead(messagingEvent);
         } else {
+		if(event.postback && event.postback.payload === USER_DEFINED_PAYLOAD )
+        {
+                //present user with some greeting or call to action
+sendTextMessage(senderID,openingmessage+" "+firstName+", que puis-je faire pour vous aujourd'hui ?");
+  }   else {
           console.log("Webhook received unknown messagingEvent: ", messagingEvent);
         }
       });
