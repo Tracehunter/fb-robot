@@ -1,0 +1,15 @@
+{
+      "text": "Bienvenue ! Je suis l'assistant virtuel de CBM, que puis-je faire pour vous aider aujourd'hui ?",
+      "quick_replies": [
+        {
+          "content_type":"text",
+          "title":"Montre moi le menu",
+          "payload":"menu"
+        },
+        {
+          "content_type":"text",
+          "title":"J'ai besoin d'aide",
+          "payload":"aide"
+        }
+      ]
+}
