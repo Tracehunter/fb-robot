@@ -252,8 +252,7 @@ var n = n+2;
     // keywords and send back the corresponding example. Otherwise, just echo
     // the text we received.
     switch (messageText.toLowerCase()) {
-		    
-	case 'bonjoursoir':
+	case 'Démarrer'
 	sendTextMessage(senderID,openingmessage+" "+firstName+", que puis-je faire pour vous aujourd'hui ?");
 	break;
 
