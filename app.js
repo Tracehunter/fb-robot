@@ -253,7 +253,7 @@ var n = n+2;
     // the text we received.
     switch (messageText.toLowerCase()) {
 		    
-	case 'bonjoursoir':
+	case 'Démarrer':
 	sendTextMessage(senderID,openingmessage+" "+firstName+", que puis-je faire pour vous aujourd'hui ?");
 	break;
 
