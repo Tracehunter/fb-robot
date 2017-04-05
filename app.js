@@ -318,10 +318,6 @@ var n = n+2;
       	    sendTextMessage(senderID,n);
 	break
 	
-	case 'add GetStarted':
-	addGetStartedButton();
-	break
-	
       case 'add menu':
         addPersistentMenu();
       break        
@@ -1193,32 +1189,6 @@ function callGetLocaleAPI(event, handleReceived) {
     req.on('error', function(e) {
       console.log('ERROR: ' + e.message);
     });
-}
-
-
-function addGetStartedButton(){
- request({
-    url: 'https://graph.facebook.com/v2.6/me/thread_settings',
-    qs: { access_token: NwR4pEZYnCdqaWSd0jrfz4R },
-    method: 'POST',
-json:{
-	setting_type:"call_to_actions",
-	thread_state:"new_thread",
-	call_to_actions":[
-    {
-      "payload":"getstarted"
-    }
-    ]
-}
-}, function(error, response, body) {
-    console.log(response)
-    if (error) {
-        console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-        console.log('Error: ', response.body.error)
-    }
-})
-
 }
 
 function addPersistentMenu(){
