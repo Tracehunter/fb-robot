@@ -12,6 +12,7 @@
     "BIO" : "BIO.json",
     "HELLO" : "HELLO.json",
     "HI" : "HELLO.json",
+    "STARTED" : "STARTED.json",
     "MENU" : "HELLO.json",
     "ROBOT" : "ROBOT.json",
     "EDUCATION": "EDUCATION.json",
