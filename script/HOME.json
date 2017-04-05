@@ -5,10 +5,10 @@
          "template_type": "generic",
           "elements": [
           {
-            "title": "Bots",
-            "subtitle": "The rise of the Facebook Bot!",
-            "item_url": "http://www.dynamic-memory.com/",               
-            "image_url": "https://raw.githubusercontent.com/matthewericfisher/fb-robot/master/img/robot.png",
+            "title": "CBM Informatique",
+            "subtitle": "Visitez notre site Web !",
+            "item_url": "https://cbminformatique.biz/",               
+            "image_url": "https://raw.githubusercontent.com/Tracehunter/fb-robot/master/img/CBM.png",
             "buttons": [
             {
               "type": "postback",
