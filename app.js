@@ -254,7 +254,7 @@ var n = n+2;
     switch (messageText.toLowerCase()) {
 		    
 	case 'bonjoursoir':
-	sendTextMessage(senderID,openingmessage);
+	sendTextMessage(senderID,openingmessage+" "+firstName+", que puis-je faire pour vous aujourd'hui ?");
 	break;
 
       case 'image':
