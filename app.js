@@ -1196,17 +1196,17 @@ function addPersistentMenu(){
         call_to_actions:[
             {
               type:"postback",
-              title:"Home",
+              title:"Accueil",
               payload:"home"
             },
             {
               type:"postback",
-              title:"Joke",
-              payload:"joke"
+              title:"Nos folders",
+              payload:"folder"
             },
             {
               type:"web_url",
-              title:"Visiter cbminformatique.biz",
+              title:"Visitez notre site Web",
               url:"https://cbminformatique.biz/"
             }
           ]
