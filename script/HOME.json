@@ -12,18 +12,18 @@
             "buttons": [
             {
               "type": "postback",
-              "title": "What is this Bot?",
-              "payload": "What is this Robot?"
+              "title": "Découvrir nos folders",
+              "payload": "folders"
             },
             {
               "type": "postback",
-              "title": "Your Business Bot",
-              "payload": "business"
+              "title": "Commander un produit",
+              "payload": "order"
             },
             {
               "type": "postback",
-              "title": "I want a Bot!",
-              "payload": "I want one"
+              "title": "J'ai besoin d'aide !",
+              "payload": "help"
             }
             ]
           }, 
