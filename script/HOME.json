@@ -23,6 +23,8 @@
             {
               "type": "postback",
               "title": "J'ai besoin d'aide !"
+              "payload": ""
+
             }
             ]
           }, 
