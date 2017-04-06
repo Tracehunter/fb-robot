@@ -1,56 +1,27 @@
-{     
+{
       "attachment": {
         "type": "template",
         "payload": {
-         "template_type": "generic",
-          "elements": [
+          "template_type": "button",
+          "text": "This bot is a mashup of Facebook, Heroku, GitHub, JavaScript and JSON. You can make your own with no coding! This bot is partly based on an example bot by Esther Crawford and team. See Github for the code",
+          "buttons":[
           {
-            "title": "Nos folders",
-            "subtitle": "Visitez notre site Web !",
-            "item_url": "https://cbminformatique.biz/",               
-            "image_url": "https://raw.githubusercontent.com/Tracehunter/fb-robot/master/img/CBM_alt.png",
-            "buttons": [
-            {
-              "type": "postback",
-              "title": "Voir nos folders",
-              "payload": "folders"
-            },
-            {
-              "type": "postback",
-              "title": "Commander un produit",
-              "payload": "order"
-            },
-            {
-              "type": "postback",
-              "title": "J'ai besoin d'aide !",
-              "payload": "help"
-            }
-            ]
-          }, 
+            "type": "web_url",
+            "url": "https://www.messenger.com/t/helloestherbot",
+            "title": "Esther's Robot"
+          },
           {
-            "title": "Folder Special Deals",
-            "subtitle": "Besoin d'un coup de main ? Découvrez nos contrats de maintenance !",
-            "item_url": "https://cbminformatique.biz/maintenance/",               
-            "image_url": "https://raw.githubusercontent.com/Tracehunter/fb-robot/master/img/maintenance.png",
-            "buttons": [
-            {
-              "type": "postback",
-              "title": "Contact",
-              "payload": "Contact"
-            }, 
-            {
-              "type": "postback",
-              "title": "Je souhaite souscrire à un contrat de maintenance",
-              "payload": "Social media"
-            },
-            {
-              "type": "postback",
-              "title": "J'ai déjà un contrat de maintenance",
-              "payload": "contratok"
-            }
-            ]
-          }, 
-          ]
+            "type": "web_url",
+            "url": "https://github.com/matthewericfisher/fb-robot",
+            "title": "Matthew's Robot source"
+          },
+          {
+            "type": "postback",
+            "title": "Home",
+            "payload": "home"
+          }
+
+           ]
         }
       }
-    }
+}
