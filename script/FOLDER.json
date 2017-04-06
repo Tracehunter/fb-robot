@@ -11,18 +11,18 @@
             "buttons": [
             {
               "type": "postback",
-              "title": "Send a message",
-              "payload": "Send a message"
+              "url": "http://www.dynamic-memory.com/",
+              "title": "Voir sur notre site",
             },
             {
               "type": "web_url",
               "url": "http://www.dynamic-memory.com/",
-              "title": "DMS Software website"
+              "title": "Voir sur Facebook"
             },
             {
               "type": "postback",
-              "title": "Get email address",
-              "payload": "Get email address"
+              "title": "Retour au menu",
+              "payload": "menu"
             }
             ]
           },
@@ -33,18 +33,18 @@
             "buttons": [
             {
               "type": "postback",
-              "title": "Send a message",
+              "title": "Voir sur notre site",
               "payload": "Send a message"
             },
             {
               "type": "web_url",
               "url": "http://www.dynamic-memory.com/",
-              "title": "DMS Software website"
+              "title": "Voir sur Facebook"
             },
             {
               "type": "postback",
-              "title": "Get email address",
-              "payload": "Get email address"
+              "title": "Retour au menu",
+              "payload": "menu"
             }
             ]
           }
