@@ -322,7 +322,7 @@ var bienvenue = openingmessage+" "+firstName+", que puis-je faire pour vous aujo
       	    sendTextMessage(senderID,n);
 	break
 	
-	case 'J\'ai besoin d\'aide !':
+	case 'j\'ai besoin d\'aide !':
       	    sendTextMessage(senderID,"que puis-je faire pour vous aider ?");	
 	break
 	
