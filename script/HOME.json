@@ -22,8 +22,7 @@
             },
             {
               "type": "postback",
-              "title": "J'ai besoin d'aide !",
-              "payload": "help"
+              "title": "J'ai besoin d'aide !"
             }
             ]
           }, 
