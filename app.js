@@ -582,7 +582,7 @@ function sendEnteredMessage(recipientId,messageText) {
 
 console.log("sendEnteredMessage "+ messageText);
 
-    if( previousMessageHash[senderID] === 'Quel produit souhaitez-vous commander ?') {
+    if( previousMessageHash[recipientID] === 'commander un produit') {
          sendTextMessage(recipientId, "Entendu !");
        //  sendTextMessage(1484991008185950, messageText); // send a message to Nicolas directly
     }
