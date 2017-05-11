@@ -582,9 +582,9 @@ function sendEnteredMessage(recipientId,messageText) {
 
 console.log("sendEnteredMessage "+ messageText);
 
-    if( previousMessageHash[recipientID] === 'commander un produit') {
-         sendTextMessage(recipientId, "Entendu !");
-       //  sendTextMessage(1484991008185950, messageText); // send a message to Nicolas directly
+    if( previousMessageHash[recipientId] === 'send a message') {
+         //sendTextMessage(1484991008185950,fistName + " " + lastName + " " + messageText); // send a message to Matthew directly
+         sendTextMessage(1484991008185950, messageText); // send a message to Matthew directly
     }
     else if( senderContext[recipientId].state === 'addKeywordStep1') {
          addKeywordStep2(recipientId,messageText);
