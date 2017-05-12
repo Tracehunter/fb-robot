@@ -247,7 +247,6 @@ var n = d.getHours();
 var n = n+2;
 	  if ((n < 6)||(n>19)) var openingmessage = "Bonsoir";
 	  else var openingmessage = "Bonjour";
-var bienvenue = openingmessage+" "+firstName+", que puis-je faire pour vous aujourd'hui ?";
 	  
     // If we receive a text message, check to see if it matches any special
     // keywords and send back the corresponding example. Otherwise, just echo
@@ -320,10 +319,6 @@ var bienvenue = openingmessage+" "+firstName+", que puis-je faire pour vous aujo
       
       case 'what time is it ?':
       	    sendTextMessage(senderID,n);
-	break
-	
-	case 'j\'ai besoin d\'aide !':
-      	    sendTextMessage(senderID,"que puis-je faire pour vous aider ?");	
 	break
 	
       case 'add menu':

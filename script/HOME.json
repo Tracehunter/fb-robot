@@ -12,7 +12,7 @@
             "buttons": [
             {
               "type": "postback",
-              "title": "Voir nos folders",
+              "title": "Découvrir nos folders",
               "payload": "folders"
             },
             {
@@ -100,4 +100,5 @@
         }
       }
     }
+
 
